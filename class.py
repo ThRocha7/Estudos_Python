@@ -16,6 +16,7 @@ class ContaCorrente:
         self._saldo = 0
         self._agencia = None
         self._historico = []
+        self.cartoes = []
 
     def mostrar_saldo(self):
         print(f'Seu saldo é R${self._saldo:,.2f}')
@@ -53,6 +54,12 @@ class ContaCorrente:
         for extrato in self._historico:
             print(extrato)
         print(f'Saldo final: R${self._saldo}')
+
+
+class CartaoCredito:
+     
+     def __init__(self) -> None:
+          pass
 
 
 conta_1 = ContaCorrente('Thiago', '111.222.333-45')
